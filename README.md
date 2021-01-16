@@ -1,6 +1,6 @@
 # BerserkMangaColoring
 
-<img src="./imgs/pix2pixhd_sample_2.png" alt="pix2pixHD sample" width="500"/>
+<img src="./imgs/pix2pixhd_sample_2.png" alt="pix2pixHD sample" width="600" class="center"/>
 
 In this project, I attempt to solve the problem of adding color to greyscale pages from a [manga](https://en.wikipedia.org/wiki/Manga) using convolutional neural networks. Color can often bring more life to the original greyscale art. However, actually coloring a page from a manga can take hours or days to finish. It would be nice to be able to automate this process. 
 
