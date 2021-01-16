@@ -143,6 +143,4 @@ It probably true that more data is needed to get this model to work properly. I 
 
 1. Wait until more artists make color more Berserk pages,
 4. Try to pair more of the still-unpaired data that we have,
-2. Use colored pages from different mangas or comics,
-3. Try transfer learning from a pre-trained model.
-
+2. Use colored pages from different mangas or comics.
