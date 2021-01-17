@@ -1,15 +1,7 @@
 # BerserkMangaColoring
 
 <p align="center">
-<<<<<<< HEAD
-<<<<<<< HEAD
     <img src="./imgs/pix2pixhd_sample_2.png" alt="pix2pixHD sample" width="500" />
-=======
-   <img src="./imgs/pix2pixhd_sample_2.png" alt="pix2pixHD sample" width="500" />
->>>>>>> c3cd3c58ee06e3e0c1a80a8b0dc555ef7e5568aa
-=======
-   <img src="./imgs/pix2pixhd_sample_2.png" alt="pix2pixHD sample" width="500" />
->>>>>>> c3cd3c58ee06e3e0c1a80a8b0dc555ef7e5568aa
 </p>
 
 In this project, I attempt to solve the problem of adding color to greyscale pages from a [manga](https://en.wikipedia.org/wiki/Manga) using convolutional neural networks. Color can often bring more life to the original greyscale art. However, actually coloring a page from a manga can take hours or days to finish. It would be nice to be able to automate this process. 
@@ -154,6 +146,10 @@ It is interesting to see how the network handles text. Sometimes, the text is co
 ## Further Comments
 
 It probably true that more data is needed to get this model to work properly. I believe this because of the success that other people have had performing similar tasks (manga colorization) using different, bigger datasets. The way I see it, there are three ways to get more data:
+
+1. Wait until more artists make color more Berserk pages,
+4. Try to pair more of the still-unpaired data that we have,
+2. Use colored pages from different mangas or comics.
 
 1. Wait until more artists make color more Berserk pages,
 4. Try to pair more of the still-unpaired data that we have,
