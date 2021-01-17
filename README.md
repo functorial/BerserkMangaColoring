@@ -2,7 +2,11 @@
 
 <p align="center">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <img src="./imgs/pix2pixhd_sample_2.png" alt="pix2pixHD sample" width="500" />
+=======
+   <img src="./imgs/pix2pixhd_sample_2.png" alt="pix2pixHD sample" width="500" />
+>>>>>>> c3cd3c58ee06e3e0c1a80a8b0dc555ef7e5568aa
 =======
    <img src="./imgs/pix2pixhd_sample_2.png" alt="pix2pixHD sample" width="500" />
 >>>>>>> c3cd3c58ee06e3e0c1a80a8b0dc555ef7e5568aa
