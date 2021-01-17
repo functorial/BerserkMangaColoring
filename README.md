@@ -1,6 +1,8 @@
 # BerserkMangaColoring
 
-<img src="./imgs/pix2pixhd_sample_2.png" alt="pix2pixHD sample" width="500"/>
+<p align="center">
+    <img src="./imgs/pix2pixhd_sample_2.png" alt="pix2pixHD sample" width="500" />
+</p>
 
 In this project, I attempt to solve the problem of adding color to greyscale pages from a [manga](https://en.wikipedia.org/wiki/Manga) using convolutional neural networks. Color can often bring more life to the original greyscale art. However, actually coloring a page from a manga can take hours or days to finish. It would be nice to be able to automate this process. 
 
@@ -94,14 +96,14 @@ Finally, the input to the algorithm is actually a 512x256 image which is a BW-RG
 ### Results + Further Comments
 Again, we will simply analyze the results by inspection. 
 
-![pix2pix Samples](./imgs/pix2pix_sample.png)
+![pix2pix Samples](./imgs/pix2pix_samples.png)
 
-These results definitely show an improvement from the results of the custom CycleGAN. The model is able to detect multiple objects in a single image and color them separately. I assume this is due to a mix of two reasons:
+These results definitely show an improvement from the results of the custom CycleGAN. The model is able to detect multiple objects in a single image and color them separately. It is even chooses the correct color sometimes (but not usually). I assume this is due to a mix of two reasons:
 
 1. Using a lesser amount of paired data is more powerful than using a slightly larger amount of unpaired data.
 2. The code given by the authors of the original pix2pix algorithm is more sophisticated than my custom CycleGAN, providing better optimizations.
 
-Still, the result is not desireable. The coloring is not all contained in the lines. Also, the colors are not always correct, especially for objects which aren't recurring characters. In all cases, the synthesized images look very different from the real colored images. 
+Still, the result is not desireable. The coloring is not all contained in the lines. Also, the colors are not always correct, especially for objects which aren't recurring characters. In all cases, the synthesized images look very different from how an artist may color them.
 
 That said, we should not take the comparison of the generator-colored images against the artist-colored images too literally. Very often do the artists take creative liberties which we should probably not expect a generator to be able to learn. 
 
