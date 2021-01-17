@@ -1,7 +1,11 @@
 # BerserkMangaColoring
 
 <p align="center">
+<<<<<<< HEAD
     <img src="./imgs/pix2pixhd_sample_2.png" alt="pix2pixHD sample" width="500" />
+=======
+   <img src="./imgs/pix2pixhd_sample_2.png" alt="pix2pixHD sample" width="500" />
+>>>>>>> c3cd3c58ee06e3e0c1a80a8b0dc555ef7e5568aa
 </p>
 
 In this project, I attempt to solve the problem of adding color to greyscale pages from a [manga](https://en.wikipedia.org/wiki/Manga) using convolutional neural networks. Color can often bring more life to the original greyscale art. However, actually coloring a page from a manga can take hours or days to finish. It would be nice to be able to automate this process. 
@@ -135,9 +139,13 @@ Some results are below. As usual, we will judge the performance of the network b
 ![pix2pixHD sample](./imgs/pix2pixhd_sample_4.png)
 ![pix2pixHD sample](./imgs/pix2pixhd_sample_5.png)
 
-Some of the results looks very pretty good. However, many of the images have had their structure severely damaged in the coloring process, as we can see with the last two results. In these cases, the network learns this destructive behavior early on, and no amount of training leads to improvement. I haven't noticed any feature shared by the images which are destroyed which are not present in the images that are well-colored by the network. One possibility is that it isn't sure how to deal with images that contain objects without well-defined boundary lines. For example, grass and mountains often have a different style than the characters. 
+Some of the results looks very pretty good. In the first image, we see that it knows to color fire orange, armor white, and horses brown. In the second image, it preserves one of the two speech bubbles, and it knows to color Zodd's (the large beast) eyeball red. In the third image, it preserves almost all of the text, even without the presence of a speech bubble. Also, the hair and skin colors are close to what they should be. The sky in the background is a nice greyish blue, which was an educted guess made by the network.
+
+However, many of the images have had their structure severely damaged in the coloring process, as we can see with the last two results. In these cases, the network learns this destructive behavior early on, and no amount of training leads to improvement. I haven't noticed any feature shared by the images which are destroyed which are not present in the images that are well-colored by the network. One possibility is that it isn't sure how to deal with images that contain objects without well-defined boundary lines. For example, grass and mountains often have a different style than the characters. 
 
 It is interesting to see how the network handles text. Sometimes, the text is copied over prefectly. Other times, it is completely distorted. Also, we can see in the last image that it may try to color a speech bubble, even if the original image didn't have one. 
+
+
 
 ## Further Comments
 
@@ -145,6 +153,4 @@ It probably true that more data is needed to get this model to work properly. I 
 
 1. Wait until more artists make color more Berserk pages,
 4. Try to pair more of the still-unpaired data that we have,
-2. Use colored pages from different mangas or comics,
-3. Try transfer learning from a pre-trained model.
-
+2. Use colored pages from different mangas or comics.
