@@ -148,9 +148,5 @@ It is interesting to see how the network handles text. Sometimes, the text is co
 It probably true that more data is needed to get this model to work properly. I believe this because of the success that other people have had performing similar tasks (manga colorization) using different, bigger datasets. The way I see it, there are three ways to get more data:
 
 1. Wait until more artists make color more Berserk pages,
-4. Try to pair more of the still-unpaired data that we have,
-2. Use colored pages from different mangas or comics.
-
-1. Wait until more artists make color more Berserk pages,
-4. Try to pair more of the still-unpaired data that we have,
-2. Use colored pages from different mangas or comics.
+2. Try to pair more of the still-unpaired data that we have,
+3. Use colored pages from different mangas or comics.
