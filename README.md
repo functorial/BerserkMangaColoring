@@ -42,7 +42,7 @@ The generators follow a U-net architecture, with the modification that there's o
 5. Upsample the result using a sequence of transposed convolutional filters with leaky ReLU activation functions.
 6. Output the entry-wise hyperbolic tangent of the result, which is of the same size as the input (it's an image).
 
-The discriminators are simplly a sequence of downsampling via convolutional filters with leaky ReLU activations. The number of output neurons match the size of the mini-batches. Each neuron represents how sure the discriminator believes the input to be real or fake.
+The discriminators are simply a sequence of downsampling via convolutional filters with leaky ReLU activations. The number of output neurons match the size of the mini-batches. Each neuron represents how sure the discriminator believes the input to be real or fake.
 
 One major downside to CycleGANs is that they consist of two separate GANs, which means twice the number of trainable parameters. This will prove to be an issue (for me), as we will see later.
 
@@ -127,7 +127,7 @@ The data prep is simple. We've already created paired datasets during the pix2pi
 
 ### Results + Comments
 
-Some results are below. As usual, we will judge the performance of the network by visual inspection. 
+Some results are below. As usual, we will judge the performance of the network by visual inspection (click for more detail). 
 
 ![pix2pixHD sample](./imgs/pix2pixhd_sample_1.png)
 ![pix2pixHD sample](./imgs/pix2pixhd_sample_2.png)
